@@ -1,0 +1,135 @@
+JFDML JFormDesigner: "5.1.0.0.51" Java: "1.7.0_21" encoding: "UTF-8"
+
+new FormModel {
+	contentType: "form/swing"
+	root: new FormRoot {
+		add( new FormWindow( "javax.swing.JFrame", new FormLayoutManager( class org.jdesktop.layout.GroupLayout ) {
+			"$horizontalGroup": "par l {comp panel1::l::324:x}"
+			"$verticalGroup": "par l {comp panel1::l:::x}"
+		} ) {
+			name: "this"
+			add( new FormContainer( "javax.swing.JPanel", new FormLayoutManager( class org.jdesktop.layout.GroupLayout ) {
+				"$horizontalGroup": "par l {seq t {space :p:18:p, comp label1:::p::p, space :p:6:p, comp entradaNombre:::p:118:p, space u:::p, par l {comp botonValidar:::::x, comp botonSalir:::::x}, space :p:37:p}}"
+				"$verticalGroup": "par l {seq l {space :p:29:p, par b {comp label1::b:p::p, comp botonValidar::b:p::p, comp entradaNombre::b:p::p}, space u:::p, comp botonSalir:::p::p, space ::13:x}}"
+			} ) {
+				name: "panel1"
+				add( new FormComponent( "javax.swing.JButton" ) {
+					name: "botonSalir"
+					"text": "Salir"
+					addEvent( new FormEvent( "java.awt.event.MouseListener", "mouseClicked", "botonSalirMouseClicked", true ) )
+				} )
+				add( new FormComponent( "javax.swing.JTextField" ) {
+					name: "entradaNombre"
+				} )
+				add( new FormComponent( "javax.swing.JLabel" ) {
+					name: "label1"
+					"text": "Nombre de la clase:"
+				} )
+				add( new FormComponent( "javax.swing.JButton" ) {
+					name: "botonValidar"
+					"text": "Validar"
+					addEvent( new FormEvent( "java.awt.event.MouseListener", "mouseClicked", "botonValidarMouseClicked", true ) )
+				} )
+			} )
+		}, new FormLayoutConstraints( null ) {
+			"location": new java.awt.Point( 50, 5 )
+			"size": new java.awt.Dimension( 340, 135 )
+		} )
+		add( new FormWindow( "javax.swing.JDialog", new FormLayoutManager( class org.jdesktop.layout.GroupLayout ) {
+			"$horizontalGroup": "par l {seq l {comp panel3:::p:283:p, space :0:1:x}}"
+			"$verticalGroup": "par l {comp panel3::l:::x}"
+		} ) {
+			name: "mensajeRepetidos"
+			add( new FormContainer( "javax.swing.JPanel", new FormLayoutManager( class org.jdesktop.layout.GroupLayout ) {
+				"$horizontalGroup": "par l {seq t {space :p:41:p, par l {seq {comp label3:::p::p, space :::p, comp comboPaquetes:::p:165:p, space :::x}, seq t {space :0:0:x, par l:::p {comp botonEditar:::p:107:p, comp botonHtml2:::::x}, space u:::p, par l:::p {comp botonInfo2:::::x, comp botonXml2:::::x}, space :p:22:p}}}, seq t {space :::x, comp botonSalir2:::p:66:p, space :p:99:p}}"
+				"$verticalGroup": "par l {seq l {space :::p, par b {comp label3::b:p::p, comp comboPaquetes::b:p::p}, space s:::p, par b {comp botonInfo2::b:p::p, comp botonEditar::b:p::p}, space u:::p, par b {comp botonXml2::b:p::p, comp botonHtml2::b:p::p}, space s:::p, comp botonSalir2:::p::p, space ::32:x}}"
+			} ) {
+				name: "panel3"
+				add( new FormComponent( "javax.swing.JLabel" ) {
+					name: "label3"
+					"text": "Clase:"
+				} )
+				add( new FormComponent( "javax.swing.JComboBox" ) {
+					name: "comboPaquetes"
+				} )
+				add( new FormComponent( "javax.swing.JButton" ) {
+					name: "botonEditar"
+					"text": "Ver Diagrama"
+					addEvent( new FormEvent( "java.awt.event.MouseListener", "mouseClicked", "botonEditarMouseClicked", true ) )
+				} )
+				add( new FormComponent( "javax.swing.JButton" ) {
+					name: "botonSalir2"
+					"text": "Salir"
+					addEvent( new FormEvent( "java.awt.event.MouseListener", "mouseClicked", "botonSalir2MouseClicked", true ) )
+				} )
+				add( new FormComponent( "javax.swing.JButton" ) {
+					name: "botonInfo2"
+					"text": "Ver información"
+					addEvent( new FormEvent( "java.awt.event.MouseListener", "mouseClicked", "botonInfo2MouseClicked", true ) )
+				} )
+				add( new FormComponent( "javax.swing.JButton" ) {
+					name: "botonXml2"
+					"text": "Generar Xml"
+					addEvent( new FormEvent( "java.awt.event.MouseListener", "mouseClicked", "botonXml2MouseClicked", true ) )
+				} )
+				add( new FormComponent( "javax.swing.JButton" ) {
+					name: "botonHtml2"
+					"text": "Generar Html"
+					addEvent( new FormEvent( "java.awt.event.MouseListener", "mouseClicked", "botonHtml2MouseClicked", true ) )
+				} )
+			} )
+		}, new FormLayoutConstraints( null ) {
+			"location": new java.awt.Point( 420, 5 )
+			"size": new java.awt.Dimension( 300, 215 )
+		} )
+		add( new FormWindow( "javax.swing.JDialog", new FormLayoutManager( class org.jdesktop.layout.GroupLayout ) {
+			"$horizontalGroup": "par l {comp panel2::l:::x}"
+			"$verticalGroup": "par l {comp panel2::l:::x}"
+		} ) {
+			name: "mensajeError"
+			add( new FormContainer( "javax.swing.JPanel", new FormLayoutManager( class org.jdesktop.layout.GroupLayout ) {
+				"$horizontalGroup": "par l {seq {space :::p, par l {seq {comp label2:::p::p, space :0:0:x}, seq t {space :0:0:x, comp btnA:::p::p}}, space :::p}}"
+				"$verticalGroup": "par l {seq l {space :p:18:p, comp label2:::p::p, space s:::p, comp btnA:::p::p, space ::25:x}}"
+			} ) {
+				name: "panel2"
+				"background": new java.awt.Color( 0, 0, 0, 255 )
+				add( new FormComponent( "javax.swing.JLabel" ) {
+					name: "label2"
+					"text": "La clase solicitada no existe"
+					"font": new java.awt.Font( "Consolas", 0, 16 )
+					"foreground": sfield java.awt.Color green
+				} )
+				add( new FormComponent( "javax.swing.JButton" ) {
+					name: "btnA"
+					"text": "Aceptar"
+					addEvent( new FormEvent( "java.awt.event.MouseListener", "mouseClicked", "btnAMouseClicked", true ) )
+				} )
+			} )
+		}, new FormLayoutConstraints( null ) {
+			"location": new java.awt.Point( 640, 370 )
+			"size": new java.awt.Dimension( 295, 140 )
+		} )
+		add( new FormWindow( "javax.swing.JDialog", new FormLayoutManager( class org.jdesktop.layout.GroupLayout ) {
+			"$horizontalGroup": "par l {seq {space :::p, par l {comp label7::::249:x, seq t {space :0:178:x, comp botonAceptar3:::p::p}, comp labelRuta::l::249:x}, space :::p}}"
+			"$verticalGroup": "par l {seq l {space :::p, comp label7:::p::p, space u:::p, comp labelRuta:::p::p, space :p:13:p, comp botonAceptar3:::p::p, space ::18:x}}"
+		} ) {
+			name: "mensajeArchivo"
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "label7"
+				"text": "El archivo se creó correctamente en la carpeta:"
+			} )
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "labelRuta"
+				"text": "text"
+			} )
+			add( new FormComponent( "javax.swing.JButton" ) {
+				name: "botonAceptar3"
+				"text": "Aceptar"
+				addEvent( new FormEvent( "java.awt.event.MouseListener", "mouseClicked", "botonAceptar3MouseClicked", true ) )
+			} )
+		}, new FormLayoutConstraints( null ) {
+			"size": new java.awt.Dimension( 285, 140 )
+			"location": new java.awt.Point( 65, 280 )
+		} )
+	}
+}

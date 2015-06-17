@@ -1,0 +1,116 @@
+JFDML JFormDesigner: "5.1.0.0.51" Java: "1.7.0_21" encoding: "UTF-8"
+
+new FormModel {
+	contentType: "form/swing"
+	root: new FormRoot {
+		add( new FormWindow( "javax.swing.JFrame", new FormLayoutManager( class org.jdesktop.layout.GroupLayout ) {
+			"$horizontalGroup": "par l {comp panelPrincipal::l:::x}"
+			"$verticalGroup": "par l {comp panelPrincipal::l:::x}"
+		} ) {
+			name: "this"
+			add( new FormContainer( "javax.swing.JPanel", new FormLayoutManager( class org.jdesktop.layout.GroupLayout ) {
+				"$horizontalGroup": "par t {seq {space :0:0:x, comp botonEditar:::p:72:p, space s:::p, comp botonSalir:::p:65:p, space :::p}, seq t {comp scrollLista:::p:102:p, space :::p, comp panelEdicion:::::x}}"
+				"$verticalGroup": "par l {seq {par l {comp scrollLista:::::x, comp panelEdicion:::::x}, space :::p, par b {comp botonSalir::b:p::p, comp botonEditar::b:p::p}, space :::p}}"
+			} ) {
+				name: "panelPrincipal"
+				add( new FormContainer( "javax.swing.JScrollPane", new FormLayoutManager( class javax.swing.JScrollPane ) ) {
+					name: "scrollLista"
+					add( new FormComponent( "javax.swing.JList" ) {
+						name: "listaClases"
+					} )
+				} )
+				add( new FormComponent( "javax.swing.JButton" ) {
+					name: "botonEditar"
+					"text": "Editar"
+					addEvent( new FormEvent( "java.awt.event.MouseListener", "mouseClicked", "botonEditarMouseClicked", true ) )
+				} )
+				add( new FormComponent( "javax.swing.JButton" ) {
+					name: "botonSalir"
+					"text": "Salir"
+					addEvent( new FormEvent( "java.awt.event.MouseListener", "mouseClicked", "botonSalirMouseClicked", true ) )
+				} )
+				add( new FormContainer( "javax.swing.JScrollPane", new FormLayoutManager( class javax.swing.JScrollPane ) ) {
+					name: "panelEdicion"
+					add( new FormContainer( "javax.swing.JPanel", new FormLayoutManager( class org.jdesktop.layout.GroupLayout ) {
+						"$horizontalGroup": "par l {seq {space :p:155:p, comp label7::::36:x, space :p:198:p}}"
+						"$verticalGroup": "par l {seq {space :p:154:p, comp label7:::::x, space :p:144:p}}"
+					} ) {
+						name: "panelCentro"
+						"background": new java.awt.Color( 153, 204, 255, 255 )
+						add( new FormComponent( "javax.swing.JLabel" ) {
+							name: "label7"
+							"text": "text"
+						} )
+					} )
+				} )
+			} )
+		}, new FormLayoutConstraints( null ) {
+			"size": new java.awt.Dimension( 515, 390 )
+			"location": new java.awt.Point( 0, 0 )
+		} )
+		add( new FormWindow( "javax.swing.JDialog", new FormLayoutManager( class org.jdesktop.layout.GroupLayout ) {
+			"$horizontalGroup": "par l {comp panel3::t:::x}"
+			"$verticalGroup": "par l {comp panel3::t:::x}"
+		} ) {
+			name: "mensajeEdicion"
+			add( new FormContainer( "javax.swing.JPanel", new FormLayoutManager( class org.jdesktop.layout.GroupLayout ) {
+				"$horizontalGroup": "par l {seq {space :::p, par l {seq t {comp botonAceptar2:::p::p, space s:::p, comp botonCancelar:::p::p}, seq l {par l {comp label4::l:p::p, comp label1::t:p::p, comp label2::t:p::p, comp label3::t:p::p, comp label5::t:p::p}, space u:::p, par l:::p {comp entradaNombre::::167:x, comp comboTipo::::167:x, comp entradaValor::::167:x, comp comboModificador::::167:x, comp comboExtras::::167:x, seq l {space :p:21:p, comp label6:::p::p}}}}, space ::48:x}}"
+				"$verticalGroup": "par l {seq l {space :p:6:p, comp label6:::p::p, space u:::p, par b {comp label1::b:p::p, comp entradaNombre::b:p::p}, space :::p, par b {comp label2::b:p::p, comp comboTipo::b:p::p}, space :p:10:p, par b {comp label3::b:p::p, comp entradaValor::b:p::p}, space u:::p, par b {comp label4::b:p::p, comp comboModificador::b:p::p}, space u:::p, par l {comp label5:::p::p, comp comboExtras:::p::p}, space s:::p, par b {comp botonCancelar::b:p::p, comp botonAceptar2::b:p::p}, space ::19:x}}"
+			} ) {
+				name: "panel3"
+				add( new FormComponent( "javax.swing.JLabel" ) {
+					name: "label1"
+					"text": "Nombre:"
+				} )
+				add( new FormComponent( "javax.swing.JLabel" ) {
+					name: "label2"
+					"text": "Tipo:"
+				} )
+				add( new FormComponent( "javax.swing.JLabel" ) {
+					name: "label3"
+					"text": "Valor:"
+				} )
+				add( new FormComponent( "javax.swing.JLabel" ) {
+					name: "label4"
+					"text": "Modificador:"
+				} )
+				add( new FormComponent( "javax.swing.JLabel" ) {
+					name: "label5"
+					"text": "Extras:"
+				} )
+				add( new FormComponent( "javax.swing.JTextField" ) {
+					name: "entradaNombre"
+				} )
+				add( new FormComponent( "javax.swing.JComboBox" ) {
+					name: "comboTipo"
+				} )
+				add( new FormComponent( "javax.swing.JTextField" ) {
+					name: "entradaValor"
+				} )
+				add( new FormComponent( "javax.swing.JComboBox" ) {
+					name: "comboModificador"
+				} )
+				add( new FormComponent( "javax.swing.JComboBox" ) {
+					name: "comboExtras"
+				} )
+				add( new FormComponent( "javax.swing.JButton" ) {
+					name: "botonAceptar2"
+					"text": "Aceptar"
+					addEvent( new FormEvent( "java.awt.event.MouseListener", "mouseClicked", "botonAceptar2MouseClicked", true ) )
+				} )
+				add( new FormComponent( "javax.swing.JButton" ) {
+					name: "botonCancelar"
+					"text": "Cancelar"
+					addEvent( new FormEvent( "java.awt.event.MouseListener", "mouseClicked", "botonCancelarMouseClicked", true ) )
+				} )
+				add( new FormComponent( "javax.swing.JLabel" ) {
+					name: "label6"
+					"text": "ApicITO Reloaded"
+				} )
+			} )
+		}, new FormLayoutConstraints( null ) {
+			"size": new java.awt.Dimension( 310, 265 )
+			"location": new java.awt.Point( 0, 400 )
+		} )
+	}
+}

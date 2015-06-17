@@ -1,0 +1,29 @@
+JFDML JFormDesigner: "5.1.0.0.51" Java: "1.7.0_21" encoding: "UTF-8"
+
+new FormModel {
+	contentType: "form/swing"
+	root: new FormRoot {
+		add( new FormWindow( "javax.swing.JFrame", new FormLayoutManager( class org.jdesktop.layout.GroupLayout ) {
+			"$horizontalGroup": "par l {seq {space :::p, par l {seq {par l {comp labelMensaje::l:p::p, comp labelRuta::l:p::p}, space :0:259:x}, seq t {space :0:208:x, comp botonAceptar:::p::p}}, space :::p}}"
+			"$verticalGroup": "par l {seq l {space :::p, comp labelMensaje:::p::p, space u:::p, comp labelRuta:::p::p, space ::26:x, comp botonAceptar:::p::p, space :p:20:p}}"
+		} ) {
+			name: "this"
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "labelMensaje"
+				"text": "text"
+			} )
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "labelRuta"
+				"text": "text"
+			} )
+			add( new FormComponent( "javax.swing.JButton" ) {
+				name: "botonAceptar"
+				"text": "Aceptar"
+				addEvent( new FormEvent( "java.awt.event.MouseListener", "mouseClicked", "botonAceptarMouseClicked", true ) )
+			} )
+		}, new FormLayoutConstraints( null ) {
+			"location": new java.awt.Point( 0, 0 )
+			"size": new java.awt.Dimension( 315, 155 )
+		} )
+	}
+}

@@ -1,0 +1,46 @@
+JFDML JFormDesigner: "5.1.0.0.51" Java: "1.7.0_21" encoding: "UTF-8"
+
+new FormModel {
+	contentType: "form/swing"
+	root: new FormRoot {
+		add( new FormContainer( "javax.swing.JPanel", new FormLayoutManager( class org.jdesktop.layout.GroupLayout ) {
+			"$horizontalGroup": "par l {seq t {space ::26:x, comp labelFlecha:::p:49:p, space :p:75:p}, comp panel2::l:::x}"
+			"$verticalGroup": "par l {seq l {comp panel2::::199:x, space s:::p, comp labelFlecha:::p:62:p, space :::p}}"
+		} ) {
+			name: "panel1"
+			"background": new java.awt.Color( 255, 255, 204, 255 )
+			add( new FormContainer( "javax.swing.JPanel", new FormLayoutManager( class org.jdesktop.layout.GroupLayout ) {
+				"$horizontalGroup": "par l {comp nombre::t::140:x, seq {space :::p, par l {comp panelAtributos::::120:x, comp panelMetodos::::120:x}, space :::p}}"
+				"$verticalGroup": "par l {seq l {space :::p, comp nombre:::p::p, space :::p, comp panelAtributos:::p:75:p, space :::x, comp panelMetodos:::p:74:p, space :p:20:p}}"
+			} ) {
+				name: "panel2"
+				"background": new java.awt.Color( 255, 255, 204, 255 )
+				add( new FormComponent( "javax.swing.JLabel" ) {
+					name: "nombre"
+					"text": "text"
+				} )
+				add( new FormContainer( "javax.swing.JScrollPane", new FormLayoutManager( class javax.swing.JScrollPane ) ) {
+					name: "panelAtributos"
+					add( new FormComponent( "javax.swing.JList" ) {
+						name: "listaAtributos"
+						"background": new java.awt.Color( 255, 255, 204, 255 )
+					} )
+				} )
+				add( new FormContainer( "javax.swing.JScrollPane", new FormLayoutManager( class javax.swing.JScrollPane ) ) {
+					name: "panelMetodos"
+					add( new FormComponent( "javax.swing.JList" ) {
+						name: "listaMetodos"
+						"background": new java.awt.Color( 255, 255, 204, 255 )
+					} )
+				} )
+			} )
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "labelFlecha"
+				"text": "text"
+			} )
+		}, new FormLayoutConstraints( null ) {
+			"location": new java.awt.Point( 110, 0 )
+			"size": new java.awt.Dimension( 150, 200 )
+		} )
+	}
+}

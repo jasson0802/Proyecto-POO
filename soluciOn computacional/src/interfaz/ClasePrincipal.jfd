@@ -1,0 +1,41 @@
+JFDML JFormDesigner: "5.1.0.0.51" Java: "1.7.0_21" encoding: "UTF-8"
+
+new FormModel {
+	contentType: "form/swing"
+	root: new FormRoot {
+		add( new FormContainer( "javax.swing.JPanel", new FormLayoutManager( class org.jdesktop.layout.GroupLayout ) {
+			"$horizontalGroup": "par l {comp panel2::l:::x}"
+			"$verticalGroup": "par l {comp panel2::l::245:x}"
+		} ) {
+			name: "panel1"
+			add( new FormContainer( "javax.swing.JPanel", new FormLayoutManager( class org.jdesktop.layout.GroupLayout ) {
+				"$horizontalGroup": "par l {comp panelAtributos::t::210:x, comp panelMetodos::t::210:x, comp nombre::l::210:x}"
+				"$verticalGroup": "par l {seq l {space :::p, comp nombre:::p:14:p, space :::p, comp panelAtributos:::p:95:p, space :::x, comp panelMetodos:::p:110:p, space :::p}}"
+			} ) {
+				name: "panel2"
+				"background": new java.awt.Color( 255, 255, 204, 255 )
+				add( new FormComponent( "javax.swing.JLabel" ) {
+					name: "nombre"
+					"text": "text"
+				} )
+				add( new FormContainer( "javax.swing.JScrollPane", new FormLayoutManager( class javax.swing.JScrollPane ) ) {
+					name: "panelAtributos"
+					add( new FormComponent( "javax.swing.JList" ) {
+						name: "listaAtributos"
+						"background": new java.awt.Color( 255, 255, 204, 255 )
+					} )
+				} )
+				add( new FormContainer( "javax.swing.JScrollPane", new FormLayoutManager( class javax.swing.JScrollPane ) ) {
+					name: "panelMetodos"
+					add( new FormComponent( "javax.swing.JList" ) {
+						name: "listaMetodos"
+						"background": new java.awt.Color( 255, 255, 204, 255 )
+					} )
+				} )
+			} )
+		}, new FormLayoutConstraints( null ) {
+			"location": new java.awt.Point( 0, 0 )
+			"size": new java.awt.Dimension( 210, 245 )
+		} )
+	}
+}
